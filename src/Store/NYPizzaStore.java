@@ -4,6 +4,16 @@ import Factory.*;
 
 public class NYPizzaStore extends Store{
     @Override
+    void setState(String state) {
+
+    }
+
+    @Override
+    void getState() {
+
+    }
+
+    @Override
     Pizza createPizza(String item){
         return switch (item) {
             case "cheese" -> new NYStyleCheesePizza();
